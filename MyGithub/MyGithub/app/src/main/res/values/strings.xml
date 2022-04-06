@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">MyGithub</string>
+    <string name="welcome_to_github_user">Welcome to Github User</string>
+    <string name="tika">Tika</string>
+    <string name="repository">Repository  ●</string>
+    <string name="followers">followers  ●</string>
+    <string name="following">following</string>
+    <string name="search">Search</string>
+    <string name="setting">setting</string>
+    <string name="tab_text_1">Followers</string>
+    <string name="tab_text_2">Following</string>
+
+
+    <style name="textCardView" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textView1" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/green_700</item>
+    </style>
+
+    <style name="textView2" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/orange_200</item>
+    </style>
+
+    <style name="textView3" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/orange_700</item>
+    </style>
+
+    <style name="imageView" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

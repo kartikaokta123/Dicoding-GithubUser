@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DetailUser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.342"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            style="@style/textView1"
+            android:layout_marginTop="4dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/img_item_photo"
+            tools:ignore="MissingConstraints"
+            tools:text="@string/tika" />
+
+
+        <TextView
+            android:id="@+id/tv_item_username"
+            style="@style/textView1"
+            android:layout_marginTop="4dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_name"
+            tools:ignore="MissingConstraints"
+            tools:text="@tools:sample/full_names" />
+
+
+        <TextView
+            android:id="@+id/tv_item_repository"
+            style="@style/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/repository"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_username"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/repository"
+            style="@style/textView2"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/repository"
+            app:layout_constraintEnd_toStartOf="@+id/tv_item_followers"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_repository"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_username"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_item_followers"
+            style="@style/textView2"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/textFollowers"
+            app:layout_constraintStart_toEndOf="@+id/repository"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_username"
+            app:layout_editor_absoluteY="180dp"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textFollowers"
+            style="@style/textView2"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/followers"
+            app:layout_constraintEnd_toStartOf="@+id/tv_item_following"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_followers"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_username"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_item_following"
+            style="@style/textView2"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/textFollowing"
+            app:layout_constraintStart_toEndOf="@+id/textFollowers"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_username"
+            tools:ignore="MissingConstraints"
+            tools:text="@tools:sample/date/day_of_week" />
+
+        <TextView
+            android:id="@+id/textFollowing"
+            style="@style/textView2"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/following"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_following"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_username"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageLocation"
+            style="@style/imageView"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/your_location"
+            app:layout_constraintEnd_toStartOf="@+id/tv_item_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_repository"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_item_location"
+            style="@style/textView3"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageCompany"
+            app:layout_constraintStart_toEndOf="@+id/imageLocation"
+            app:layout_constraintTop_toBottomOf="@+id/repository"
+            tools:ignore="MissingConstraints"
+            tools:text="@tools:sample/cities" />
+
+        <ImageView
+            android:id="@+id/imageCompany"
+            style="@style/imageView"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/insurance_company"
+            app:layout_constraintEnd_toStartOf="@+id/tv_item_company"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_location"
+            app:layout_constraintTop_toBottomOf="@+id/textFollowers"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_item_company"
+            style="@style/textView3"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageCompany"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_following"
+            tools:ignore="MissingConstraints"
+            tools:text="@tools:sample/cities" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="150dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ToggleButton
+        android:id="@+id/btn_Favorite"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="354dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/favorite"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_pager2"
+        app:layout_constraintTop_toBottomOf="@id/itemDetail"
+        app:tabTextColor="@android:color/holo_green_dark"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
